@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const app = express();
 const userRoute = require("./routes/users");
 const port = process.env.PORT || 3000;
- const uri = "mongodb+srv://dagmaros:dagmaros27@cluster0.qpjncnd.mongodb.net/Excercise?retryWrites=true&w=majority"
+ const uri = process.env.MONGO_URI
 const xx = {
     useUnifiedTopology: true,
     useNewURLParser: true,
